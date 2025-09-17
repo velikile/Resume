@@ -47,6 +47,9 @@
   .leftPanel h2 {
     color: white;
   }
+  .leftPanel h3 {
+    color: white;
+  }
   
   /* End Colors */
   
@@ -77,14 +80,14 @@
   
   .projectName span, 
   .jobPosition span {
-    font-size: 0.35cm;
+    font-size: 0.37cm;
   }
   
   .smallText, 
   .smallText span, 
   .smallText p, 
   .smallText a {
-    font-size: 0.35cm;
+    font-size: 0.38cm;
   }
   
   .leftPanel .smallText, 
@@ -155,7 +158,9 @@
   .leftPanel {
     width: 30%;
     background-color: #484444;
-    padding: 0.4cm;
+    padding: 0.2cm;
+    padding-left:0.4cm;
+    padding-right:0.0cm;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -218,7 +223,6 @@
   .workExperience>ul>li {
     position: relative;
     margin: 0;
-    padding-bottom: 0.5cm;
     padding-left: 0.5cm;
   }
   
@@ -251,7 +255,7 @@
   }
   
   .item {
-    padding-bottom: 0.7cm;
+    padding-bottom: 0.2cm;
     padding-top: 0.7cm;
   }
   
@@ -286,7 +290,6 @@
     <page size="A4">
       <div class="container">
         <div class="leftPanel">
-          <img src="avatar.png"/>
           <div class="details">
             <div class="item bottomLineSeparator">
               <h2>
@@ -315,7 +318,7 @@
                 </p>
               </div>
             </div>
-            <div class="item bottomLineSeparator">
+            <div class="item">
               <h2>
                 SKILLS
               </h2>
@@ -327,7 +330,6 @@
                       <li>Python</li>
                       <li>C#</li>
                       <li>JavaScript (JS)</li>
-                      <li>TypeScript (TS)</li>
                   </ul>
                   
                   <h4>Frameworks & Libraries</h4>
@@ -339,6 +341,7 @@
                       <li>Pandas</li>
                       <li>Matplotlib</li>
                       <li>NumPy</li>
+                      <li>Numba</li>
                   </ul>
                   
                   <h4>Technologies & Tools</h4>
@@ -354,17 +357,45 @@
                   <ul>
                       <li>Unity</li>
                       <li>Blender</li>
+                      <li>Omniverse</li>
                   </ul>
                   
-                  <h4>Databases</h4>
-                  <ul>
-                      <li>MSSQL</li>
-                      <li>PostgreSQL</li>
-                      <li>MongoDB</li>
-                  </ul>
                 </div>
               </div>
             </div>
+
+          <div class="item">
+            <h2>
+              EDUCATION
+            </h2>
+            <div class="smallText">
+              <p class="bolded white">
+                Bachelor of Science 
+              </p>
+              <p>
+                The College Of Management 
+              </p>
+              <p>
+                2012 - 2015
+              </p>
+            <h3>
+              CERTIFICATES 
+            </h3>
+            <div class="smallText">
+              <p class="bolded white">
+              Deep Learning Specialization
+              </p>
+              <p>
+                DeepLearning.ai 
+              </p>
+              <p>
+               2023 
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            </div>
+          </div>
           
         
           </div>
@@ -377,7 +408,7 @@
             </h1>
             <div class="smallText">
               <h3>
-                Software Engineer 
+                Senior Computer vision & ML Engineer
               </h3>
             </div>
           </div>
@@ -401,7 +432,7 @@
               <li>
                 <div class="jobPosition">
                   <span class="bolded">
-                   Computer vision and machine learning Engineer
+                   Computer Vision ML and video streaming 
                   </span>
                   <span>
                     july 2021 - Current
@@ -417,24 +448,23 @@
                     Crafting innovative computer vision and AI solutions using a blend of cutting-edge and traditional machine learning approaches.
                   </p>
                   <ul style="padding-bottom:10px;padding-top:10px">
-                      <li><p>Developing and fine-tuning semantic segmentation models for SOTA performance @ Coffee Beanz</p></li> 
-                      <li><p>Developed and implemented a system for object detection, counting, and size measurement @ Coffee Beanz</p></li>
-                      <li><p>Designed and built a pipeline for generating synthetic data to enhance model training and evaluation @ Coffee Beanz</p></li>
-                      <li><p>Training and Optimizing Object Detection models for the nvidia jetson TensorRT @ ATR</p></li>
+                      <li><p>Training and Optimizing Object Detection models for the nvidia TensorRT engine @ ATR</p></li>
+                      <li><p>Deployed multi models systems to Nvidia triton server@ ATR</p></li>
                       <li><p>Utilizing SAHI for the detection of small objects @ ATR</p></li>
                       <li><p>Feature engineering for image processing, transfer learning. @ATR </p></li>
                       <li><p>Developed lens distortion correction techniques to improve the accuracy of object detection systems. @. Autonomous ship</p></li>
-                      <li><p>Focused on creating 3D simulations and interactive data visualizations to enhance analysis and decision-making processes. @ Teazer.</p></li>
-                      <li><p>Porting opengl debayer to cuda compute @ R&D Image compression </p></li>
+                      <li><p>Creating 3D simulations and interactive data visualizations to enhance analysis and flight control optimizations . @ Teazer.</p></li>
                       <li><p>Designed and implemented an offline video encoder and streamer, enabling seamless video processing and playback. @ Archive compression</p></li>
                       <li><p>Image Key point extraction, descriptor matching and tracking over time @ Geo registration</p></li>                      
                       <li><p>Ship simulation (Unity3D) (Data gathering and generation) @ Autonomous ship.</p></li>
                       <li><p>Implement Raw video streaming and processing pipelines utilizing Nvidia Rivarmax platform.@ R&D threat detection</p></li>
+                      <li><p>Porting GLSL to CUDA compute @ R&D RT large scale Image compression </p></li>
                       <li><p>Build an automatic sign language animation using Unity3D , blender utilizing OpenAI LLM Models</p></li>
                       <li><p>Designed and implemented a 3D camera control simulator within a custom 3D engine, offering enhanced control and fluid interaction for virtual environments. @ UAV operator control package.</p></li>
                       <li><p>Vision & Telmetry based camera control motion tracking and cotrol correction for UAVS operators.@ UAV operator control package</p></li>
                       <li><p>Multiple channel video & metadata streaming and recording system @ DVR</p></li>
                       <li><p>Optimized encoding, decoding, and inference processes within video processing pipelines to enhance performance and reduce latency </p></li>
+                      <li><p>Implemented a system for video archival and retrieval @ Archive compression</p></li>
                       <li><p>Developed an object tracking system utilizing the Kalman filter for enhanced real-time tracking and state estimation. @ GeoRegistration</p></li>
                       <li><p>Building and deploying production-ready Docker images, ensuring reliability, security, and scalability for deployment in live environments.</p></li>
                   </ul>                  
@@ -442,7 +472,7 @@
                     <span class="bolded">Skills: </span>C/C++, Python, C#, Javascript,Bash, PyTorch, TensorFlow , Scipy, Pandas, Deep Nueral Nets, Computer Vision, Signal processing, Cuda, GLSL, DirectX, Video Processing, GStreamer, FFmpeg, Nvidia JETSON , Docker , Jenkins , Git  
                   </p>
                 </div>
-              </br></br></br></br></br></br>
+                </br></br></br>
               </li>
               <li>
                 <div class="jobPosition">
@@ -533,38 +563,6 @@
     <page size="A4">
       <div class="container">
         <div class="leftPanel">
-          <div class="item">
-            <h2>
-              EDUCATION
-            </h2>
-            <div class="smallText">
-              <p class="bolded white">
-                Bachelor of Science 
-              </p>
-              <p>
-                The College Of Management 
-              </p>
-              <p>
-                2012 - 2015
-              </p>
-            </div>
-          </div>
-          <div class="item">
-            <h2>
-              CERTIFICATES 
-            </h2>
-            <div class="smallText">
-              <p class="bolded white">
-              Deep Learning Specialization
-              </p>
-              <p>
-                DeepLearning.ai 
-              </p>
-              <p>
-               2023 
-              </p>
-            </div>
-          </div>
         </div>
         <div class="rightPanel">
         </div>
